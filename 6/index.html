@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Backend Developer Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .resume-container {
+            max-width: 1000px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+        
+        .section-title {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info a {
+            color: var(--dark-color);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .skill-badge {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            font-weight: 500;
+            margin: 0.25rem;
+            padding: 0.5rem 0.75rem;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .company {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .education-institution {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container resume-container my-5">
+        <!-- Header Section -->
+        <div class="header text-center mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="profile.jpg" alt="Profile Photo" class="profile-img rounded-circle">
+                </div>
+                <div class="col-md-9 text-md-start ps-md-5 mt-3 mt-md-0">
+                    <h1>John Doe</h1>
+                    <h3>Senior Backend Developer</h3>
+                    <p class="mb-0">Specializing in scalable microservices and cloud architecture</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row p-4">
+            <!-- Left Column -->
+            <div class="col-md-4">
+                <!-- Contact Info -->
+                <div class="mb-5">
+                    <h4 class="section-title">Contact</h4>
+                    <ul class="list-unstyled contact-info">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> <a href="mailto:john.doe@example.com">john.doe@example.com</a></li>
+                        <li class="mb-2"><i class="fas fa-globe me-2"></i> <a href="https://johndoe.dev" target="_blank">johndoe.dev</a></li>
+                        <li class="mb-2"><i class="fab fa-github me-2"></i> <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></li>
+                        <li class="mb-2"><i class="fab fa-linkedin me-2"></i> <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+                
+                <!-- Skills -->
+                <div class="mb-5">
+                    <h4 class="section-title">Technical Skills</h4>
+                    <h6 class="mt-3 mb-2 fw-bold">Programming Languages</h6>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge rounded-pill">Java</span>
+                        <span class="skill-badge rounded-pill">Python</span>
+                        <span class="skill-badge rounded-pill">C#</span>
+                        <span class="skill-badge rounded-pill">JavaScript</span>
+                        <span class="skill-badge rounded-pill">Go</span>
+                    </div>
+                    
+                    <h6 class="mt-3 mb-2 fw-bold">Backend Technologies</h6>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge rounded-pill">Spring Boot</span>
+                        <span class="skill-badge rounded-pill">Django</span>
+                        <span class="skill-badge rounded-pill">Node.js</span>
+                        <span class="skill-badge rounded-pill">ASP.NET Core</span>
+                        <span class="skill-badge rounded-pill">GraphQL</span>
+                    </div>
+                    
+                    <h6 class="mt-3 mb-2 fw-bold">Databases</h6>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge rounded-pill">PostgreSQL</span>
+                        <span class="skill-badge rounded-pill">MongoDB</span>
+                        <span class="skill-badge rounded-pill">MySQL</span>
+                        <span class="skill-badge rounded-pill">Redis</span>
+                        <span class="skill-badge rounded-pill">Elasticsearch</span>
+                    </div>
+                    
+                    <h6 class="mt-3 mb-2 fw-bold">DevOps & Cloud</h6>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge rounded-pill">Docker</span>
+                        <span class="skill-badge rounded-pill">Kubernetes</span>
+                        <span class="skill-badge rounded-pill">AWS</span>
+                        <span class="skill-badge rounded-pill">Azure</span>
+                        <span class="skill-badge rounded-pill">CI/CD</span>
+                        <span class="skill-badge rounded-pill">Terraform</span>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="mb-5">
+                    <h4 class="section-title">Education</h4>
+                    <div class="mb-3">
+                        <h5 class="education-degree mb-1">M.S. Computer Science</h5>
+                        <div class="education-institution">Stanford University</div>
+                        <div class="date">2012 - 2014</div>
+                    </div>
+                    <div>
+                        <h5 class="education-degree mb-1">B.S. Software Engineering</h5>
+                        <div class="education-institution">University of California</div>
+                        <div class="date">2008 - 2012</div>
+                    </div>
+                </div>
+                
+                <!-- Certifications -->
+                <div class="mb-5">
+                    <h4 class="section-title">Certifications</h4>
+                    <ul>
+                        <li>AWS Certified Solutions Architect</li>
+                        <li>Google Cloud Professional Engineer</li>
+                        <li>Oracle Certified Professional: Java SE 11 Developer</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-8 ps-md-5">
+                <!-- Professional Summary -->
+                <div class="mb-5">
+                    <h4 class="section-title">Professional Summary</h4>
+                    <p>Results-driven backend developer with 8+ years of experience designing and implementing scalable, high-performance web services and APIs. Specialized in microservices architecture, database optimization, and cloud infrastructure. Passionate about clean code, system design, and mentoring junior developers.</p>
+                </div>
+                
+                <!-- Experience -->
+                <div class="mb-5">
+                    <h4 class="section-title">Work Experience</h4>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="job-title mb-1">Senior Backend Engineer</h5>
+                            <div class="date">2020 - Present</div>
+                        </div>
+                        <div class="company mb-2">TechCorp Inc., San Francisco, CA</div>
+                        <ul>
+                            <li>Led the migration of monolithic architecture to microservices, improving scalability and reducing latency by 40%</li>
+                            <li>Designed and implemented RESTful APIs serving 10M+ daily requests with 99.99% uptime</li>
+                            <li>Optimized database queries reducing response times by 60% through indexing and query refactoring</li>
+                            <li>Implemented CI/CD pipelines reducing deployment times from 2 hours to 15 minutes</li>
+                            <li>Mentored 3 junior developers, conducting code reviews and architecture design sessions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="job-title mb-1">Backend Developer</h5>
+                            <div class="date">2016 - 2020</div>
+                        </div>
+                        <div class="company mb-2">DataSystems LLC, San Jose, CA</div>
+                        <ul>
+                            <li>Developed high-throughput data processing services handling 5TB of daily data</li>
+                            <li>Implemented authentication and authorization services using OAuth 2.0 and JWT</li>
+                            <li>Containerized applications using Docker and orchestrated with Kubernetes</li>
+                            <li>Reduced server costs by 30% through performance optimization and auto-scaling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="job-title mb-1">Junior Software Engineer</h5>
+                            <div class="date">2014 - 2016</div>
+                        </div>
+                        <div class="company mb-2">WebSolutions Co., Oakland, CA</div>
+                        <ul>
+                            <li>Developed and maintained backend services for e-commerce platform</li>
+                            <li>Implemented payment processing integration with Stripe and PayPal</li>
+                            <li>Created automated testing suite increasing code coverage from 60% to 90%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Projects -->
+                <div class="mb-5">
+                    <h4 class="section-title">Key Projects</h4>
+                    
+                    <div class="mb-3">
+                        <h5 class="job-title mb-1">Distributed Task Scheduler</h5>
+                        <ul>
+                            <li>Built a fault-tolerant distributed task scheduling system using Go and Redis</li>
+                            <li>Implemented leader election and horizontal scaling handling 50K tasks/minute</li>
+                            <li>Reduced task processing latency by 75% compared to previous solution</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h5 class="job-title mb-1">Real-time Analytics Platform</h5>
+                        <ul>
+                            <li>Architected a real-time data processing pipeline using Kafka and Spark</li>
+                            <li>Designed time-series database schema optimized for analytical queries</li>
+                            <li>Enabled sub-second query response times for dashboards with 1M+ data points</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Achievements -->
+                <div>
+                    <h4 class="section-title">Achievements</h4>
+                    <ul>
+                        <li>Recipient of TechCorp's "Innovator of the Year" award for architecture redesign (2022)</li>
+                        <li>Published author of "Microservices Patterns for Java Developers" (O'Reilly, 2021)</li>
+                        <li>Regular speaker at backend development conferences (DevOps Days, QCon, etc.)</li>
+                        <li>3 patents in distributed systems and data processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

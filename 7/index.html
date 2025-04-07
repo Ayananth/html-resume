@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Backend Developer Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4285F4;
+            --secondary-color: #34A853;
+            --accent-color: #EA4335;
+            --light-bg: #F8F9FA;
+            --dark-text: #202124;
+            --light-text: #5F6368;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        
+        .resume-wrapper {
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #3367D6);
+            color: white;
+            padding: 2.5rem 0;
+        }
+        
+        .name-title {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1.5rem;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .contact-info a {
+            color: var(--dark-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+        
+        .skill-pill {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            border-radius: 20px;
+            padding: 0.35rem 0.9rem;
+            margin: 0.2rem;
+            display: inline-block;
+            font-size: 0.85rem;
+        }
+        
+        .job-title {
+            font-weight: 700;
+            color: var(--dark-text);
+        }
+        
+        .company {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .date {
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+        }
+        
+        .education-institution {
+            color: var(--primary-color);
+        }
+        
+        .project-card {
+            background: var(--light-bg);
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .project-title {
+            color: var(--dark-text);
+            font-weight: 600;
+        }
+        
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(66, 133, 244, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body class="py-5">
+    <div class="container">
+        <div class="resume-wrapper mx-auto">
+            <!-- Header Section -->
+            <div class="header px-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="name-title">
+                            <h1 class="mb-1">Alex Johnson</h1>
+                            <h3 class="mb-0">Backend Developer</h3>
+                            <p class="mb-0 mt-2">Building scalable APIs and efficient systems</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <img src="pic.jpg" alt="Profile Photo" class="profile-img rounded-circle">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 p-4">
+                <!-- Left Column -->
+                <div class="col-lg-4">
+                    <!-- Contact Info -->
+                    <div class="mb-4">
+                        <h4 class="section-title">Get In Touch</h4>
+                        <ul class="list-unstyled contact-info">
+                            <li class="mb-3 d-flex align-items-center">
+                                <div class="icon-box">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <a href="mailto:alex.johnson@example.com">alex.johnson@example.com</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <div class="icon-box">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <a href="tel:+11234567890">(123) 456-7890</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <div class="icon-box">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <span>Seattle, WA</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <div class="icon-box">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <a href="https://github.com/alexjohnson" target="_blank">github.com/alexjohnson</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="icon-box">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <a href="https://linkedin.com/in/alexjohnson" target="_blank">linkedin.com/in/alexjohnson</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Skills -->
+                    <div class="mb-4">
+                        <h4 class="section-title">Technical Skills</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold mb-2">Languages</h6>
+                            <div>
+                                <span class="skill-pill">Python</span>
+                                <span class="skill-pill">Java</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">Go</span>
+                                <span class="skill-pill">SQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6 class="fw-bold mb-2">Frameworks</h6>
+                            <div>
+                                <span class="skill-pill">Django</span>
+                                <span class="skill-pill">Flask</span>
+                                <span class="skill-pill">Spring Boot</span>
+                                <span class="skill-pill">Express.js</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6 class="fw-bold mb-2">Databases</h6>
+                            <div>
+                                <span class="skill-pill">PostgreSQL</span>
+                                <span class="skill-pill">MongoDB</span>
+                                <span class="skill-pill">Redis</span>
+                                <span class="skill-pill">DynamoDB</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h6 class="fw-bold mb-2">DevOps & Cloud</h6>
+                            <div>
+                                <span class="skill-pill">AWS</span>
+                                <span class="skill-pill">Docker</span>
+                                <span class="skill-pill">Kubernetes</span>
+                                <span class="skill-pill">Terraform</span>
+                                <span class="skill-pill">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="mb-4">
+                        <h4 class="section-title">Education</h4>
+                        <div class="mb-3">
+                            <h5 class="education-degree mb-1">B.Sc. Computer Science</h5>
+                            <div class="education-institution">University of Washington</div>
+                            <div class="date">2013 - 2017</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Languages -->
+                    <div>
+                        <h4 class="section-title">Languages</h4>
+                        <div class="d-flex flex-wrap">
+                            <span class="skill-pill">English (Fluent)</span>
+                            <span class="skill-pill">Spanish (Intermediate)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="col-lg-8">
+                    <!-- About -->
+                    <div class="mb-4">
+                        <h4 class="section-title">About Me</h4>
+                        <p>I'm a backend developer with 5+ years of experience crafting robust APIs and scalable systems. I thrive in solving complex technical challenges and optimizing performance. When I'm not coding, you'll find me contributing to open-source projects or exploring new technologies.</p>
+                    </div>
+                    
+                    <!-- Experience -->
+                    <div class="mb-4">
+                        <h4 class="section-title">Experience</h4>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="job-title">Backend Engineer</h5>
+                                <div class="date">2020 - Present</div>
+                            </div>
+                            <div class="company mb-2">CloudScale Technologies</div>
+                            <ul>
+                                <li>Developed microservices architecture handling 15,000+ requests per minute</li>
+                                <li>Reduced API response times by 65% through query optimization and caching</li>
+                                <li>Implemented authentication system serving 500,000+ users</li>
+                                <li>Led migration from monolithic to serverless architecture on AWS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="job-title">Software Developer</h5>
+                                <div class="date">2017 - 2020</div>
+                            </div>
+                            <div class="company mb-2">DataFlow Solutions</div>
+                            <ul>
+                                <li>Built ETL pipelines processing 2TB of data daily</li>
+                                <li>Created REST APIs for internal analytics platform</li>
+                                <li>Automated deployment processes reducing release cycles by 40%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Projects -->
+                    <div class="mb-4">
+                        <h4 class="section-title">Projects</h4>
+                        
+                        <div class="project-card">
+                            <h5 class="project-title mb-2">Distributed Task Queue</h5>
+                            <ul class="mb-0">
+                                <li>Developed a Redis-based task queue system with priority scheduling</li>
+                                <li>Implemented worker autoscaling based on queue depth</li>
+                                <li>Open-sourced with 500+ GitHub stars</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h5 class="project-title mb-2">API Gateway</h5>
+                            <ul class="mb-0">
+                                <li>Built a customizable API gateway with rate limiting and caching</li>
+                                <li>Reduced latency by 30% through intelligent routing</li>
+                                <li>Handled authentication for multiple microservices</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievements -->
+                    <div>
+                        <h4 class="section-title">Achievements</h4>
+                        <ul>
+                            <li>AWS Certified Developer - Associate (2022)</li>
+                            <li>Speaker at PyCon 2021: "Optimizing Django for Scale"</li>
+                            <li>Maintainer of popular open-source Python package (5K+ downloads/week)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
